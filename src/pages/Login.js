@@ -26,7 +26,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      let url = `${process.env.REACT_APP_HOSTNAME}/api/auth/loginUser`
+      let url = `${process.env.REACT_APP_HOSTNAME}api/auth/loginUser`
       const response = await fetch(url, {
         method: "POST",
         headers: {
