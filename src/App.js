@@ -14,7 +14,6 @@ function App() {
 
   return (
     <>  
-      {process.env.REACT_APP_HOSTNAME}
       <Navbar />
       <Alert alert={alert} />
       <div className="container">
