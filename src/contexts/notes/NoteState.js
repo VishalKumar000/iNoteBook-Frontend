@@ -19,7 +19,7 @@ const NoteState = (props) => {
             return;
         }
         try {
-            let url = `${host}/api/notes/fetchAllNotes`
+            let url = `${host}api/notes/fetchAllNotes`
             const response = await fetch(url, {
                 method: "GET",
                 headers: {
@@ -36,7 +36,7 @@ const NoteState = (props) => {
     const addNote = async (newNote) => {
         try {
             //* Todo : Api call
-            let url = `${host}/api/notes/addNote`
+            let url = `${host}api/notes/addNote`
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -58,7 +58,7 @@ const NoteState = (props) => {
 
     const editNote = async ({ _id, title, description, tag }) => {
         //* Todo : Api call
-        let url = `${host}/api/notes/updateNote/${_id}`
+        let url = `${host}api/notes/updateNote/${_id}`
         let data = { title, description, tag }
         const response = await fetch(url, {
             method: "PUT",
@@ -84,7 +84,7 @@ const NoteState = (props) => {
 
     const deleteNote = async (id) => {
         //* Todo : Api call
-        let url = `${host}/api/notes/deleteNote/${id}`
+        let url = `${host}api/notes/deleteNote/${id}`
         await fetch(url, {
             method: "DELETE",
             headers: {
