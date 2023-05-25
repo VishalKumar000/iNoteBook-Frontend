@@ -38,7 +38,7 @@ const SignUp = () => {
     }
 
     try {
-      let url = `${process.env.REACT_APP_HOSTNAME}/api/auth/createUser`
+      let url = `${process.env.REACT_APP_HOSTNAME}api/auth/createUser`
       const response = await fetch(url, {
         method: "POST",
         headers: {
